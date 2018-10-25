@@ -16,8 +16,11 @@ you could just execute `sudo monitor.php` in terminal. It has to run under root,
 
 Note: `chmod u+x monitor.php` if you have any permission problem. 
 ### add crontab job
-in `sudo crontab -e`, add a new job, for example:
+in `sudo crontab -e`, add a new job.
+
+for example:
+
 `0 * * * * * /your/path/to/monitor.php` 
 
 ## Config
-Configuration is pretty straight forward in `config.json`, just add sites under websites, add email under emails.
+Configuration is pretty straight forward in `config.json`, just add sites under `websites` list, and add email under `emails` list.
