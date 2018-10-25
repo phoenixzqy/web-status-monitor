@@ -1,0 +1,12 @@
+{
+    "websites": [{
+        "url": "https://1.example.site",
+        "title": "Example site 1"
+    }, {
+        "url": "https://2.example.site",
+        "title": "Example site 1"
+    }],
+    "emails": [
+        "your_email@to_receive.alert_message"
+    ]
+}
