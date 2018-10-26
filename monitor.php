@@ -20,16 +20,16 @@ function infoLog($msg)
 
 function emailErrLog($email, $msg)
 {
-    $headers = "Reply-To: FDN-Web-Monitor <donotreply@fdn.monitor.fortinet.com>\r\n";
-    $headers .= "Return-Path: FDN-Web-Monitor <donotreply@fdn.monitor.fortinet.com>\r\n";
-    $headers .= "From: FDN-Web-Monitor <donotreply@fdn.monitor.fortinet.com>\r\n";
-    $headers .= "Organization: Fortinet-FDN\r\n";
+    $headers = "Reply-To: Web-Status-Monitor <donotreply@your.site.com>\r\n";
+    $headers .= "Return-Path: Web-Status-Monitor <donotreply@your.site.com>\r\n";
+    $headers .= "From: Web-Status-Monitor <donotreply@your.site.com>\r\n";
+    $headers .= "Organization: Your Organization\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
     $headers .= "X-Priority: 3\r\n";
     $headers .= "X-Mailer: PHP" . phpversion() . "\r\n";
 
-    $message = "$msg \n\n\nThis is an auto-generated alert email from FDN-Web-Monitor.\nPlease do NOT reply to this email!!";
+    $message = "$msg \n\n\nThis is an auto-generated alert email from Web-Status-Monitor.\nPlease do NOT reply to this email!!";
     try {
         mail(
             $email,
