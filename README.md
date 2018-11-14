@@ -24,6 +24,7 @@ for example:
 
 ### Alert and Log
 **Alert**: Once an error occers, the monitor will send email to email addresses under emails list in config file. It will roughly indicate what type of error occers in email body.
+
 **Log**: Your log will be under `/var/log/web_status_monitor.log` file.
 
 ## Config
